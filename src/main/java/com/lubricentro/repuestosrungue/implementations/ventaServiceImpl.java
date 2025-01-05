@@ -37,6 +37,7 @@ public class ventaServiceImpl implements VentaService {
         Venta venta = new Venta();
         venta.setTotal(carro.getTotal());
         venta.setPago(carro.getPago());
+        venta.setFecha(LocalDateTime.now());
 
         // Obtener los productos por sus codigos
         for (ProductoDTO objeto : productosDTO) {

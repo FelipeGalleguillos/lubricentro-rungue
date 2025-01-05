@@ -76,6 +76,7 @@ public class RepuestosrungueApplication {
 
 			venta2.setFecha(LocalDateTime.now().plusMonths(1));
 			venta2.setTotal(6000);
+			venta2.setPago("efectivo");
 			venta2.setVentasProductos(ventas2s);
 
 			ventaRepository.save(venta2);

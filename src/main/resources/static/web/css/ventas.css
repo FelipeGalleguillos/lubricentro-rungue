@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(206, 222, 246);
+}
+
+main{
+    padding: 1rem;
+}
+
+table{
+    box-shadow: 0px 0px 12px 2px rgb(102, 108, 156);
+}
+
+.filtros{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 12px 2px rgb(102, 108, 156);
+}
+
+.boton{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(23, 69, 176);
+    color: white;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 0px 0px 12px 2px rgb(102, 108, 156);
+}
+
+.boton:hover{
+    box-shadow: 0px 0px 12px 2px rgb(23, 176, 97);
+    background-color: rgb(23, 176, 97);
+    border: none;
+}
+
+
+.filterbtn:hover{
+    color: aliceblue;
+    background-color: blue;
+}
+
+section{
+    width: 100%;
+}
+
+thead tr th{
+    background-color: rgb(0, 139, 144) !important;
+    color: aliceblue !important;
+}
+
+h2{
+    text-align: center;
+}
+
+.filterbox{
+    margin-right: 2rem;
+}
+
+.inputfechas{
+    width: 100%;
+    display: flex;
+}
+
+.inputfechas div{
+    margin-right: 2rem;
+}
+
+thead{
+    position: sticky;
+    top: 0%;
+}
+
+.scrolltabla{
+    height: 70vh;
+    overflow: auto;
+}

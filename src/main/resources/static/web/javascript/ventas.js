@@ -2,7 +2,9 @@ Vue.createApp({
     data(){
         return{
             data:[],
-            filter:[]
+            filter:[],
+            desde:"",
+            hasta:""
         }
     },
     created(){

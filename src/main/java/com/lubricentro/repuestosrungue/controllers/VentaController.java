@@ -21,7 +21,7 @@ public class VentaController {
     @PostMapping(path= "/venta/crear")
     public ResponseEntity<Object> crearVenta(@RequestBody CarritoDTO carrito) {
 
-        if (carrito == null) {
+        if (carrito != null) {
             ventaService.crearVentaConProductos(carrito);
             return new ResponseEntity<>("venta creada con exito",HttpStatus.CREATED);
         }else{

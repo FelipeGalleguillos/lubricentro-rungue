@@ -18,6 +18,8 @@ public class WebAuthorization {
                         authorizeRequests
                                 .requestMatchers("/web/puntoventa.html").hasAuthority("ADMIN")
                                 .requestMatchers("/api/ventas/todas").hasAuthority("ADMIN")
+                                .requestMatchers("/api/ventas/crear").hasAuthority("ADMIN")
+                                .requestMatchers("/api/productos").hasAuthority("ADMIN")
                                 .anyRequest().permitAll()  // Permitir el acceso a cualquier otra URL no definida
                 )
                 .formLogin(formLogin ->

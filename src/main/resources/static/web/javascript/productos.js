@@ -1,0 +1,46 @@
+Vue.createApp({
+    data(){
+        return{
+            data:[],
+            filter:[],
+            categorias:[],
+            cat:"",
+            code:""
+        }
+    },
+    created(){
+            axios.get('/api/productos')
+            .then(response=>{
+                console.log(response)
+                this.data=response.data
+                this.filter=response.data
+                this.categorias=[...new Set(this.filter.map((producto)=>producto.categoria))]
+            })
+            .catch(err=>{
+                console.log(err)   
+            })
+    },
+    methods:{
+        todos(){
+            axios.get('/api/productos')
+            .then(response=>{
+                console.log(response)
+                this.data=response.data
+                this.filter=response.data
+                this.categorias=[...new Set(this.filter.map((producto)=>producto.categoria))]
+            })
+            .catch(err=>{
+                console.log(err)   
+            })
+        },
+        filtroCategoria(){
+            this.filter=this.data.filter((producto)=>producto.categoria==this.cat)
+            console.log(this.filter)
+        },
+        buscar(){
+            this.filter=this.data.filter((producto)=>producto.barcode==this.code)
+            console.log(this.filter)
+        }
+
+    }
+}).mount('#app')
