@@ -82,10 +82,6 @@ public class RepuestosrungueApplication {
 			ventaRepository.save(venta2);
 			usuarioRepository.save(usuario);
 
-
-
-
-
 		};
 	}
 

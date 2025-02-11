@@ -84,7 +84,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h2 class="notFoundText">NO SE ENCONTRARON RESULTADOS...</h2>
+            <h2 v-if="filter.length<0" class="notFoundText">NO SE ENCONTRARON RESULTADOS...</h2>
         </div>
     </main>
 

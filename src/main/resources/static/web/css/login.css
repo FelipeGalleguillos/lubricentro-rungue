@@ -17,14 +17,20 @@ body{
 }
 
 h4{
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 input{
     width: 70%;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(64, 160, 255);
+}
+
+input:focus{
+    border:1px solid rgb(64, 160, 255);
+    outline: none;
 }
 
 form{
@@ -36,8 +42,8 @@ form{
     height: 400px;
     border: 1p solid black;
     padding: 1rem;
-    border-radius: 1rem;
-    background-color: rgba(255,0,0,0.3);
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 11px 6px rgba(0,0,0,0.75);
 }
 
@@ -45,11 +51,10 @@ a{
     background-color: rgba(104, 4, 4, 0.75);
     width: fit-content;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
-    border: 0.5px solid white;
 }
 
 a:hover{
